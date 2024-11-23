@@ -1,0 +1,35 @@
+// App.scss
+$primary-color: #0d6efd;
+$secondary-color: #6c757d;
+$text-color: #fff;
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+.App {
+  header,
+  footer {
+    background-color: $primary-color;
+    color: $text-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
