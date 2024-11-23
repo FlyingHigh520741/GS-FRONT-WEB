@@ -69,7 +69,7 @@ function HomePage() {
               </picture>
               <Carousel.Caption style={{ backgroundColor: 'rgba(128, 128, 128, 0.5)' }}>
                 <h3>Energia Hidrelétrica</h3>
-                <p>A energia hidrelétrica é gerada pelo fluxo da água, geralmente por meio de barragens, contribuindo significativamente para a produção de energia limpa.</p>
+                <p>A energia hidrelétrica é gerada pelo fluxo da água, geralmente por meio de barragens, contribuindo para a produção de energia limpa.</p>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
