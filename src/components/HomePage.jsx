@@ -1,4 +1,10 @@
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import solarMobile from '/src/img/solar_mobile.png';
+import solarLarge from '/src/img/solar_large.png';
+import windMobile from '/src/img/wind_mobile.png';
+import windLarge from '/src/img/wind_large.png';
+import hydroMobile from '/src/img/hydro_mobile.png';
+import hydroLarge from '/src/img/hydro_large.png';
 
 function HomePage() {
   return (
@@ -23,11 +29,11 @@ function HomePage() {
           <Carousel>
             <Carousel.Item>
               <picture>
-                <source media="(max-width: 768px)" srcSet="/src/img/solar_mobile.png" />
-                <source media="(min-width: 769px)" srcSet="/src/img/solar_large.png" />
+                <source media="(max-width: 768px)" srcSet={solarMobile} />
+                <source media="(min-width: 769px)" srcSet={solarLarge} />
                 <img
                   className="d-block w-100"
-                  src="/src/img/solar_large.png"
+                  src={solarLarge}
                   alt="Energia Solar"
                 />
               </picture>
@@ -38,11 +44,11 @@ function HomePage() {
             </Carousel.Item>
             <Carousel.Item>
               <picture>
-                <source media="(max-width: 768px)" srcSet="/src/img/wind_mobile.png" />
-                <source media="(min-width: 769px)" srcSet="/src/img/wind_large.png" />
+                <source media="(max-width: 768px)" srcSet={windMobile} />
+                <source media="(min-width: 769px)" srcSet={windLarge} />
                 <img
                   className="d-block w-100"
-                  src="/src/img/wind_large.png"
+                  src={windLarge}
                   alt="Energia Eólica"
                 />
               </picture>
@@ -53,11 +59,11 @@ function HomePage() {
             </Carousel.Item>
             <Carousel.Item>
               <picture>
-                <source media="(max-width: 768px)" srcSet="/src/img/hydro_mobile.png" />
-                <source media="(min-width: 769px)" srcSet="/src/img/hydro_large.png" />
+                <source media="(max-width: 768px)" srcSet={hydroMobile} />
+                <source media="(min-width: 769px)" srcSet={hydroLarge} />
                 <img
                   className="d-block w-100"
-                  src="/src/img/hydro_large.png"
+                  src={hydroLarge}
                   alt="Energia Hidrelétrica"
                 />
               </picture>
