@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Container, Row, Col, ListGroup, Button, Modal } from 'react-bootstrap';
+import gsEdgeVideo from '/src/videos/gs-edge.mp4';
+import iotMobile from '/src/img/iot_mobile.png';
+import iotLarge from '/src/img/iot_large.png';
 
 function EnergyMonitor() {
   const [energyData, setEnergyData] = useState([]);
@@ -60,7 +63,7 @@ function EnergyMonitor() {
         </Modal.Header>
         <Modal.Body>
           <video width="100%" height="315" controls>
-            <source src="/src/videos/gs-edge.mp4" type="video/mp4" />
+            <source src={gsEdgeVideo} type="video/mp4" />
             Seu navegador não suporta a reprodução de vídeo.
           </video>
         </Modal.Body>
@@ -68,6 +71,19 @@ function EnergyMonitor() {
           <Button variant="secondary" onClick={() => setShowModal(false)}>Fechar</Button>
         </Modal.Footer>
       </Modal>
+      <Row className="mt-4">
+        <Col>
+          <picture>
+            <source media="(max-width: 768px)" srcSet={iotMobile} />
+            <source media="(min-width: 769px)" srcSet={iotLarge} />
+            <img
+              className="d-block w-100"
+              src={iotLarge}
+              alt="Sistema IoT para Monitoramento de Energia"
+            />
+          </picture>
+        </Col>
+      </Row>
     </Container>
   );
 }
